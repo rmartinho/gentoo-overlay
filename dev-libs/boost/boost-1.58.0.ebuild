@@ -28,7 +28,7 @@ RDEPEND="icu? ( >=dev-libs/icu-3.6:=[${MULTILIB_USEDEP}] )
 	sys-libs/zlib[${MULTILIB_USEDEP}]
 	!app-admin/eselect-boost"
 DEPEND="${RDEPEND}
-	=dev-util/boost-build-${MAJOR_V}*"
+	>=dev-util/boost-build-${MAJOR_V}"
 REQUIRED_USE="
 	mpi? ( threads )
 	python? ( ${PYTHON_REQUIRED_USE} )"
